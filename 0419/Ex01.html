@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">
+        a tag
+    </h1>
+    <a href="#bottom"><sub>문서 맨 아래로</sub></a>
+    <hr>
+    <h3>anchor : 대상을 지정하여, 대상의 위치로 이동한다</h3>
+
+    <h3>HyperText Transfer Protocol</h3>
+    <h3>HyperText : 문서와 문서간에 링크로 연결된 형식의 텍스트</h3>
+
+    <p>
+        <a href="https://www.naver.com">네이버</a><br>
+        a : anchor<br>
+        href : Http REFerence<br>
+    </p>
+
+    <p>
+        <a href="다운로드 (1).jpg"></a>
+            <img src="다운로드 (1).jpg">
+    </p>
+
+    <ul>
+        <li>a 태그 안에는 글자, 버튼, 그림 등을 배치할 수 있다</li>
+        <li>a 태그의 대상은 사이트 주소, 현재 문서 내 id, 파일 등이 될 수 있다</li>
+        <li>링크가 만약 파일을 가리키면, 브라우저에서 열린다</li>
+        <li>만약, 파일의 형식이 브라우저에서 처리할 수 없는 형식이면 다운로드 한다</li>
+    </ul>
+
+    <p>
+      <a href="제약조간과 시퀀스.txt">텍스트 파일</a>  
+    </p>
+
+    <p>
+        <a href="다운로드 (1).jpg">이미지 파일</a>  
+    </p>
+
+    <p>
+        <a href="남자는 머리빨.mp4">동영상 파일</a>
+    </p>
+
+    <p>
+        <a href="notepad.exe">윈도우 실행 파일</a>
+    </p>
+
+    <p>
+        <a href="0418.zip">압축 파일</a>
+    </p>
+
+    <p>
+        <a href="../0418/quiz.html">상대 경로를 이용한 다른 HTML 문서</a>
+    </p>
+
+    <hr>
+    
+    <h3>a 태그는 inline이므로, 내부에서 block요소를 포함시키지 않도록 한다</h3>
+
+    <a href="https://www.daum.net">
+        <div>
+            <img src="다운로드 (1).jpg">
+        </div>
+    </a>
+
+    <p id="bottom">
+        <a href="#top"><button>문서 상단으로</button></a>
+    </p>
+</body>
+</html>
