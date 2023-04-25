@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            flex: 2;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding-left: 0;
+        }
+        li {
+            margin: 10px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search {
+            display: flex;
+            margin: 20px;
+            width: 550px;
+            border: 1px solid white;
+            align-items: center;
+            justify-content: center;
+        }
+        .search input {
+            all: unset;
+            padding: 10px;
+            width: 400px;
+        }
+        .search > div {
+            margin: 0 10px;
+        }
+        .sub {
+            display: flex;
+            align-items: center;
+            padding-bottom: auto;
+        }
+        footer {
+            width: auto;
+            background-color: white;
+        }
+        .fleft {
+            color: gray;
+            display: flex;
+            align-items: center;
+            background-color: aliceblue;
+            margin: auto;
+            padding: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <ul>
+                <li>Google 정보</li>
+                <li>스토어</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>Gmail</li>
+                <li>이미지</li>
+                <li><button>로그인</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="search">
+            <div>🔍</div>
+            <div><input type="text"></div>
+            <div>⌨</div>
+            <div>🎙</div>
+            <div>📸</div>
+        </div>
+        <div class="sub">
+            <button>Google 검색</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </main>
+    <footer>
+        <div class="fleft">대한민국</div>
+            <div >
+            <div>광고</div>
+            <div>비즈니스</div>
+            <div>검색의 원리</div>
+        </div>
+        <div class="fright">
+            <div>개인정보처리방침</div>
+            <div>약관</div>
+            <div>설정</div>
+        </div>
+    </footer>
+
+    <script>
+        const input = document.querySelector('input[type="search"]')
+        const searchDiv = document.querySelector('div.search')
+
+        input.onfocus = () => searchDiv.style.boxShadow = '1px 1px 1px darkgrey'
+        input.onblur = () => searchDiv.style.boxShadow = 'none'
+    </script>
+    // 화면 기본 레이아웃 구성은 마쳤으나 레이아웃 배치가 원활하게 진행되지 않음
+</body>
+</html>
